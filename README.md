@@ -1,12 +1,11 @@
 # FastAPI CI/CD Example
 
-This project demonstrates a full CI/CD pipeline for a FastAPI app using:
+This project showcases a complete CI/CD pipeline for a FastAPI application, integrating the following features:
 
 - ✅ Pre-commit hooks
 - ✅ Unit testing with pytest
 - ✅ Docker build
 - ✅ Docker push to Docker Hub
-- ✅ Deployment to Fly.io
 
 ---
 
