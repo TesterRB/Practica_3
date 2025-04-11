@@ -74,7 +74,21 @@ pre-commit install
 pre-commit run --all-files
 ```
 
-## 🧪 4. Crear test simple
+## 🧪 4. Crear Archivos del programa
+
+`app/main.py`:
+
+```python
+from fastapi import FastAPI
+
+app = FastAPI()
+
+
+@app.get("/")
+def read_root():
+    return {"message": "Hello CI/CD"}
+
+```
 
 `tests/test_main.py`:
 
