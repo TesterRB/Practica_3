@@ -49,18 +49,17 @@ pip freeze > requirements.txt
 
 ```yaml
 repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-yaml
+      - id: check-added-large-files
   - repo: https://github.com/psf/black
     rev: 24.3.0
     hooks:
       - id: black
-  - repo: https://github.com/PyCQA/isort
-    rev: 5.12.0
-    hooks:
-      - id: isort
-  - repo: https://github.com/pre-commit/mirrors-flake8
-    rev: v6.1.0
-    hooks:
-      - id: flake8
 ```
 
 2. Instalar los hooks:
