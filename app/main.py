@@ -11,3 +11,11 @@ def read_root():
 @app.get("/hello")
 def hello():
     return {"message": "Hello world"}
+
+
+# Nuevo endpoint
+
+
+@app.get("/products/{product_id}")
+def get_product(product_id: int, category: str | None = None):
+    return {"product_id": product_id, "category": category}
