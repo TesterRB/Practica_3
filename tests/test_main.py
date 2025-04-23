@@ -22,4 +22,4 @@ def test_read_2_root():
 def test_get_product():
     response = client.get("/products/123?category=electronics")
     assert response.status_code == 200
-    assert response.json() == {"product_id": 123, "category": "electronics"}
+    assert response.json() == {"product_id": 123, "Categoria": "electronics"}
